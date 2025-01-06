@@ -1,0 +1,29 @@
+@font-face {
+    font-family: gamelia;
+    src: url('../assets/font/gamelia.otf') format('truetype');
+}
+
+@font-face {
+    font-family: bbc-1979;
+    src: url('../assets/font/bbc-1979.otf') format('truetype');
+}
+
+@font-face {
+    font-family: meinily-light;
+    src: url('../assets/font/Meinily-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: meinily-light-italic;
+    src: url('../assets/font/Meinily-Light-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: strikeout;
+    src: url('../assets/font/strikeout.otf') format('truetype');
+}
+
+@font-face {
+    font-family: mob-concrete;
+    src: url('../assets/font/mob-concrete.ttf') format('truetype');
+}

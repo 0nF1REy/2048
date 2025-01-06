@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- ==== TITLE and META ==== -->
+    <title>２ ０ ４ ８</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Alan Ryan da Silva Domingues">
+    <meta content='#333333' name='theme-color' />
+    <meta name="robots" content="index, follow">
+    <!-- ==== OPEN GRAPH and SECURITY ==== -->
+    <meta property="og:title" content="２ ０ ４ ８">
+    <meta property="og:image" content="./assets/img/pagina-principal.png">
+    <meta property="og:type" content="website">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- ==== FAVICON and MICROSOFT TILE ==== -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <meta name="application-name" content="２ ０ ４ ８" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <!-- ==== CSS and SCRIPT ==== -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/keyframe.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    <script src="./scripts/script.js" defer></script>
+    <!-- ================ -->
+</head>
+
+<body>
+    <audio id="musica" loop>
+        <source src="./assets/music/249816.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <header>
+        <div>
+            <h1>2048</h1>
+        </div>
+    </header>
+    <main>
+        <div class="score">Pontos: <span id="score">0</span></div>
+        <div class="container">
+            <div class="grid" id="grid"></div>
+            <div class="game-over" id="gameOver">
+                <h2>Fim de jogo!</h2>
+                <button class="restart-btn" onclick="restartGame()">Jogar novamente</button>
+            </div>
+        </div>
+        <div class="controls">
+            Use as teclas:
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <i class="fa-solid fa-arrow-up-long"></i>
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <i class="fa-solid fa-arrow-down-long"></i>
+            para mover as peças
+        </div>
+
+    </main>
+    <footer>
+        <div>©2025 Alan Ryan</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf8ef;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    color: #2a2826;
+    font-size: 3em;
+    font-family: bbc-1979;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    animation: slideInFromLeft 3s ease-out forwards, stayInTheMiddle 2s 3s forwards, slideOutToRight 3s 5s ease-out forwards;
+    text-shadow:
+        2px 2px 2px rgba(214, 5, 5, 0.8),
+        2px 2px 4px rgba(40, 203, 7, 0.6),
+        2px 2px 16px rgba(7, 42, 179, 0.4);
+}
+
+#score {
+    font-weight: bold;
+}
+
+.score,
+.controls {
+    color: #776e65;
+    font-style: italic;
+    position: relative;
+    z-index: 50;
+}
+
+.score {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: meinily-light;
+    animation: slideUpFromBottom 10s ease-out forwards;
+}
+
+.controls {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: meinily-light-italic;
+    animation: slideDownFromTop 10s ease-out forwards;
+}
+
+.container {
+    animation: slideIn 5s ease-in-out;
+    font-family: strikeout;
+    position: relative;
+    z-index: 100;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: #bbada0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(238, 228, 218, 0.35);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.game-over {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(238, 228, 218, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 100;
+    font-family: mob-concrete;
+}
+
+.game-over h2 {
+    font-size: 40px;
+    color: #776e65;
+    margin-bottom: 20px;
+}
+
+.game-over .restart-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: #8f7a66;
+    cursor: pointer;
+}
+
+footer {
+
+    color: #2a2826;
+    padding: 20px 0;
+    margin-top: 50px;
+    animation: slideInFromRight 3s ease-out forwards, stayInTheMiddle 2s 3s forwards, slideOutToLeft 3s 5s ease-out forwards;
+    font-family: gamelia;
+    letter-spacing: 0.2rem;
+    text-shadow:
+        2px 2px 2px rgba(214, 5, 5, 0.8),
+        2px 2px 4px rgba(40, 203, 7, 0.6),
+        2px 2px 16px rgba(7, 42, 179, 0.4);
+
+}
